@@ -148,6 +148,11 @@ describe("links", () => {
     expect(accountHref(trader({ name: "k", wallet: null, kalshi_username: "kal" }))).toBe("/account/kal");
     expect(accountHref(trader({ name: "n", wallet: null }))).toBeNull();
   });
+  it("encodes the id as one path segment and leaves ordinary ids as they are", () => {
+    expect(accountHref(trader({ name: "k", platform: "kalshi", kalshi_username: "New.Jeans-4_x" }))).toBe("/account/New.Jeans-4_x");
+    expect(accountHref(trader({ name: "k", platform: "kalshi", kalshi_username: "a/../b?x=1#y" }))).toBe("/account/a%2F..%2Fb%3Fx%3D1%23y");
+    expect(accountHref(trader({ name: "w", wallet: "0x1/../../api" }))).toBe("/account/0x1%2F..%2F..%2Fapi");
+  });
   it("adds the referral parameter to outbound Polymarket links", () => {
     expect(polymarketProfileUrl(W(3), null)).toBe(`https://polymarket.com/profile/${W(3)}?via=unbroken0x`);
     expect(polymarketProfileUrl(null, "https://www.polymarket.com/@SomeOne?tab=x")).toBe("https://polymarket.com/@someone?tab=x&via=unbroken0x");
@@ -171,8 +176,40 @@ describe("API boundary", () => {
     expect(parsed.traders[0].roi).toBeUndefined();
     expect(parsed.traders[0].stats.pnl).toBe(1);
   });
-  it("rejects a response without P&L", () => {
-    expect(leaderboardResponse.safeParse({ traders: [{ rank: 1, name: "a", stats: {} }] }).success).toBe(false);
-    expect(leaderboardResponse.safeParse({ error: "nope" }).success).toBe(false);
+  it("drops only the row that has no P&L, never the list", () => {
+    const parsed = leaderboardResponse.parse({
+      traders: [{ rank: 1, name: "a", stats: { pnl: 5 } }, { rank: 2, name: "b", stats: {} }, null, "junk", { rank: 3, name: "c" }, { rank: 4, name: "d", stats: { pnl: -2 } }],
+    });
+    expect(parsed.traders.map((t) => t.name)).toEqual(["a", "d"]);
+  });
+  it("reads a field of the wrong type as absent and keeps the row", () => {
+    const [t] = leaderboardResponse.parse({
+      traders: [{
+        rank: "7", name: null, wallet: 5, twitter: { handle: "x" }, pfp: false, platform: 1, kalshi_username: ["k"],
+        stats: { pnl: 12.5 }, join_date: 20260101, smart_score: "high", affiliated: "yes", sports_share: "0.9", day_mover: { label: 1 }, roi: "12%",
+      }],
+    }).traders;
+    expect(t).toEqual({
+      rank: "7", name: "", wallet: null, twitter: null, pfp: null, platform: null, kalshi_username: null,
+      stats: { pnl: 12.5 }, join_date: null, smart_score: null, affiliated: null, sports_share: null, day_mover: null, roi: undefined,
+    });
+  });
+  it("keeps a smart score whose figures are null, as the original renders one", () => {
+    const [t] = leaderboardResponse.parse({ traders: [{ rank: 1, name: "a", stats: { pnl: 1 }, smart_score: { score: null, winRate: null, sharpeRatio: "n/a" } }] }).traders;
+    expect(t.smart_score).toEqual({ score: null, winRate: null, sharpeRatio: null });
+    expect(sortValue(t, "score", "1d")).toBe(0);
+  });
+  it("gives an empty list, not an error, for a body with no trader list", () => {
+    expect(leaderboardResponse.parse({ error: "nope" })).toEqual({ traders: [], lastUpdated: null });
+    expect(leaderboardResponse.parse({ traders: "soon", lastUpdated: 5 })).toEqual({ traders: [], lastUpdated: null });
+    expect(leaderboardResponse.parse(null)).toEqual({ traders: [], lastUpdated: null });
+  });
+  it("parses every row of the list the page was built against", () => {
+    const rows = Array.from({ length: 3 }, (_, i) => ({ rank: i + 1, name: `t${i}`, wallet: W(i), stats: { pnl: i }, roi: i === 0 ? null : undefined, kalshi_profile: "https://kalshi.com/ideas/profiles/x", kalshi_username: null }));
+    const parsed = leaderboardResponse.parse({ traders: rows, lastUpdated: "2026-11-11T18:31:59.798Z" });
+    expect(parsed.traders).toHaveLength(3);
+    expect(parsed.traders[0].roi).toBeNull();
+    expect(parsed.traders[1].roi).toBeUndefined();
+    expect(parsed.lastUpdated).toBe("2026-11-11T18:31:59.798Z");
   });
 });

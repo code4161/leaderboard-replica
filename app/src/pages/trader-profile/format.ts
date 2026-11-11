@@ -99,3 +99,11 @@ export function sharePlatform(platform: string | null | undefined): string {
 }
 
 export const isWalletAddress = (s: string) => /^0x[a-fA-F0-9]{40}$/.test(s);
+
+/**
+ * A fraction as a percentage figure, the way the original's arithmetic treats a missing value: null
+ * counts as zero ("0", "0.0") and an absent field gives "NaN".
+ */
+export function percent(fraction: number | null | undefined, digits: number): string {
+  return (Number(fraction) * 100).toFixed(digits);
+}

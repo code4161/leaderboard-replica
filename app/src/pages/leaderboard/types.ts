@@ -1,11 +1,15 @@
 import { z } from "zod";
 
-const text = z.string().nullish();
-const num = z.number().nullish();
+// The original reads the response with no schema, so a field of the wrong type costs at most one cell.
+// Parsing here is as forgiving: an optional field that is not of its type reads as absent, and a row is
+// dropped only when it has no numeric P&L to show (where the original's own rendering throws). One bad
+// row never rejects the list.
+const text = z.string().nullish().catch(null);
+const num = z.number().nullish().catch(null);
 
 const smartScore = z.object({
-  score: z.number(),
-  winRate: z.number(),
+  score: num,
+  winRate: num,
   sharpeRatio: num,
   sharpe1d: num,
   sharpe1w: num,
@@ -18,8 +22,9 @@ const smartScore = z.object({
 const dayMover = z.object({ label: z.string(), change: z.number(), icon: text });
 
 const trader = z.object({
-  rank: z.number(),
-  name: z.string(),
+  // Only ever printed into test ids, so it is kept as sent.
+  rank: z.union([z.number(), z.string()]).nullish().catch(undefined),
+  name: z.string().catch(""),
   wallet: text,
   twitter: text,
   pfp: text,
@@ -32,15 +37,27 @@ const trader = z.object({
   hyperliquid_profile: text,
   stats: z.object({ pnl: z.number() }),
   join_date: text,
-  smart_score: smartScore.nullish(),
-  affiliated: z.boolean().nullish(),
+  smart_score: smartScore.nullish().catch(null),
+  affiliated: z.boolean().nullish().catch(null),
   sports_share: num,
   esports_share: num,
-  day_mover: dayMover.nullish(),
-  roi: num,
+  day_mover: dayMover.nullish().catch(null),
+  // Absent and null are told apart by the ROI cell, so a value of the wrong type reads as absent.
+  roi: z.number().nullish().catch(undefined),
 });
 
-export const leaderboardResponse = z.object({ traders: z.array(trader), lastUpdated: text });
+/** The rows that can be shown; anything else in the list is skipped. */
+export function parseTraders(rows: unknown): Trader[] {
+  if (!Array.isArray(rows)) return [];
+  return rows.flatMap((row) => {
+    const parsed = trader.safeParse(row);
+    return parsed.success ? [parsed.data] : [];
+  });
+}
+
+export const leaderboardResponse = z
+  .object({ traders: z.unknown().transform(parseTraders), lastUpdated: text })
+  .catch({ traders: [], lastUpdated: null });
 export const dailyProfitResponse = z.object({ daily_profit: z.string() });
 
 export type Trader = z.infer<typeof trader>;

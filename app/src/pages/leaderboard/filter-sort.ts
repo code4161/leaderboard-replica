@@ -98,32 +98,13 @@ export function sortIndicator(current: SortColumn | null, direction: SortDirecti
   return direction === "asc" ? " ↓" : " ↑";
 }
 
-const X_HOSTS = ["x.com", "twitter.com", "www.x.com", "www.twitter.com"];
+// The X link builder is shared with the trader profile.
+export { twitterUrl } from "@/lib/twitter";
 
-/** The X profile link for whatever a trader's `twitter` field holds (URL, bare host path or handle), or null when it is not safely one. */
-export function twitterUrl(value: string | null | undefined): string | null {
-  const v = value?.trim();
-  if (!v) return null;
-  if (v.startsWith("http://") || v.startsWith("https://")) {
-    try {
-      const u = new URL(v);
-      const unsafe = u.pathname.includes("javascript:") || u.pathname.includes("data:");
-      return u.protocol === "https:" && X_HOSTS.includes(u.hostname) && !unsafe ? v : null;
-    } catch {
-      return null;
-    }
-  }
-  if (/^(x\.com|twitter\.com)\/[\w_]+$/.test(v)) return `https://${v}`;
-  const handle = v.replace(/^@/, "");
-  return /^[A-Za-z0-9_]{1,15}$/.test(handle) ? `https://x.com/${handle}` : null;
-}
-
-/** The trader's profile page on this site, when there is one. */
+/** The trader's profile page on this site, when there is one. The id is one path segment, so it is encoded. */
 export function accountHref(t: Trader): string | null {
-  if (t.platform === "kalshi" && t.kalshi_username) return `/account/${t.kalshi_username}`;
-  if (t.wallet) return `/account/${t.wallet}`;
-  if (t.kalshi_username) return `/account/${t.kalshi_username}`;
-  return null;
+  const id = t.platform === "kalshi" && t.kalshi_username ? t.kalshi_username : t.wallet || t.kalshi_username;
+  return id ? `/account/${encodeURIComponent(id)}` : null;
 }
 
 export function scoreColor(score: number): string {

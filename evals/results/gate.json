@@ -1,8 +1,8 @@
 {
- "at": "2026-11-11T19:47:11.975Z",
- "tree": "47d8f58b6493648b",
+ "at": "2026-11-11T20:26:32.277Z",
+ "tree": "63775aa6e1475aab",
  "pass": true,
- "seconds": 1264,
+ "seconds": 1263,
  "scenarios": "242/242",
  "steps": [
   {
@@ -14,20 +14,20 @@
   {
    "name": "lint",
    "ok": true,
-   "seconds": 1.1,
+   "seconds": 1.2,
    "tail": ""
   },
   {
    "name": "unit",
    "ok": true,
    "seconds": 0.7,
-   "tail": "RUN  v5.1.0 /Users/hari/Freelance/Elcara/app\n\n\n Test Files  14 passed (14)\n      Tests  150 passed (150)\n   Start at  00:56:11\n   Duration  417ms (import 47%, transform 27%, tests 22%, worker 4%)"
+   "tail": "RUN  v5.1.0 /Users/hari/Freelance/Elcara/app\n\n\n Test Files  20 passed (20)\n      Tests  194 passed (194)\n   Start at  01:35:31\n   Duration  391ms (import 49%, tests 29%, transform 13%, worker 8%)"
   },
   {
    "name": "build",
    "ok": true,
-   "seconds": 0.9,
-   "tail": "dist/assets/useQuery-C79NKAKt.js              7.97 kB │ gzip:  2.93 kB\ndist/assets/api-docs-CcSjolVO.js              8.09 kB │ gzip:  2.76 kB\ndist/assets/kalshi-leaderboard-HzbGGy1C.js    9.10 kB │ gzip:  3.24 kB\ndist/assets/battle-CE-O-P4I.js               37.05 kB │ gzip: 12.10 kB\ndist/assets/avatar-DeU1BhoD.js               55.22 kB │ gzip: 35.71 kB\ndist/assets/trader-profile-B2J_BbNH.js       77.99 kB │ gzip: 32.33 kB\ndist/assets/schemas-Ck0q9IvJ.js              84.02 kB │ gzip: 23.95 kB\ndist/assets/leaderboard-DnYliyW-.js          96.23 kB │ gzip: 53.41 kB\ndist/assets/index-Z_VB31y9.js               169.86 kB │ gzip: 55.20 kB\ndist/assets/LineChart-DQtJX1Rm.js           336.90 kB │ gzip: 99.62 kB\n\n✓ built in 678ms"
+   "seconds": 0.6,
+   "tail": "dist/assets/useQuery-BXciFMIS.js              7.97 kB │ gzip:  2.94 kB\ndist/assets/api-docs-CjpD6Ndx.js              8.09 kB │ gzip:  2.76 kB\ndist/assets/kalshi-leaderboard-CODikkVS.js    9.14 kB │ gzip:  3.25 kB\ndist/assets/battle-BZgFJvhw.js               37.05 kB │ gzip: 12.10 kB\ndist/assets/avatar-B46_ArBC.js               55.71 kB │ gzip: 36.02 kB\ndist/assets/trader-profile-BTAe-Ugf.js       78.61 kB │ gzip: 32.54 kB\ndist/assets/schemas-Dq3L17lU.js              84.03 kB │ gzip: 23.97 kB\ndist/assets/leaderboard-CnX8gFpc.js          96.07 kB │ gzip: 53.34 kB\ndist/assets/index-BH49YruM.js               171.09 kB │ gzip: 55.71 kB\ndist/assets/LineChart-BO9GR9Mv.js           336.90 kB │ gzip: 99.62 kB\n\n✓ built in 361ms"
   },
   {
    "name": "parity self-test (planted defects must fail)",
@@ -38,8 +38,20 @@
   {
    "name": "parity (all scenarios, both viewports, production build)",
    "ok": true,
-   "seconds": 1233.4,
+   "seconds": 1232.3,
    "tail": "PASS tp_poly_only_calendar_d      dom 1 style 0 pixel 0\nPASS tp_poly_only_calendar_m      dom 1 style 0 pixel 0\nPASS tp_multi_wallet_d            dom 1 style 0 pixel 0\nPASS tp_multi_wallet_m            dom 1 style 0 pixel 0\nPASS tp_hyperliquid_d             dom 1 style 0 pixel 0\nPASS tp_hyperliquid_m             dom 1 style 0 pixel 0\nPASS tp_hyperliquid_unnamed_d     dom 1 style 0 pixel 0\nPASS tp_hyperliquid_unnamed_m     dom 1 style 0 pixel 0\nPASS tp_not_found_d               dom 1 style 0 pixel 0\nPASS tp_not_found_m               dom 1 style 0 pixel 0\n\n242/242 scenarios pass. Diffs: evals/out/diff/<scenario>_<vp>.{dom,style}.diff"
+  },
+  {
+   "name": "record API calls seen in parity",
+   "ok": true,
+   "seconds": 0.2,
+   "tail": "629 recorded API calls"
+  },
+  {
+   "name": "production allowlist admits every recorded call",
+   "ok": true,
+   "seconds": 0.7,
+   "tail": "RUN  v5.1.0 /Users/hari/Freelance/Elcara/app\n\n\n Test Files  1 passed (1)\n      Tests  2 passed (2)\n   Start at  01:56:32\n   Duration  80ms (import 38%, tests 23%, transform 22%, worker 15%)"
   }
  ]
 }

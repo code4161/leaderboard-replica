@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
-import { Route, Switch } from "wouter";
+import { Route, Switch, useLocation } from "wouter";
+import { ErrorBoundary } from "@/components/error-boundary";
 import { useReferral } from "@/pages/leaderboard/referral";
 
 const Leaderboard = lazy(() => import("@/pages/leaderboard"));
@@ -12,19 +13,22 @@ const Terms = lazy(() => import("@/pages/terms"));
 
 export default function App() {
   useReferral();
+  const [location] = useLocation();
   return (
-    <Suspense fallback={null}>
-      <Switch>
-        <Route path="/">{() => <Leaderboard platform="all" />}</Route>
-        <Route path="/polymarket">{() => <Leaderboard platform="polymarket" />}</Route>
-        <Route path="/kalshi" component={KalshiLeaderboard} />
-        <Route path="/battle" component={Battle} />
-        <Route path="/account/:wallet">{(p) => <TraderProfile id={p.wallet} />}</Route>
-        <Route path="/api-docs" component={ApiDocs} />
-        <Route path="/submit" component={Submit} />
-        <Route path="/terms" component={Terms} />
-        <Route>{() => <Leaderboard platform="all" />}</Route>
-      </Switch>
-    </Suspense>
+    <ErrorBoundary resetKey={location}>
+      <Suspense fallback={null}>
+        <Switch>
+          <Route path="/">{() => <Leaderboard platform="all" />}</Route>
+          <Route path="/polymarket">{() => <Leaderboard platform="polymarket" />}</Route>
+          <Route path="/kalshi" component={KalshiLeaderboard} />
+          <Route path="/battle" component={Battle} />
+          <Route path="/account/:wallet">{(p) => <TraderProfile id={p.wallet} />}</Route>
+          <Route path="/api-docs" component={ApiDocs} />
+          <Route path="/submit" component={Submit} />
+          <Route path="/terms" component={Terms} />
+          <Route>{() => <Leaderboard platform="all" />}</Route>
+        </Switch>
+      </Suspense>
+    </ErrorBoundary>
   );
 }

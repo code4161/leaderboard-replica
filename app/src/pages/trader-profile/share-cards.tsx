@@ -1,13 +1,13 @@
 import { useMemo, useState, type ReactNode } from "react";
 import { recentMonths } from "./calendar";
 import { sharePlatform, upDown } from "./format";
+import { saveBlob, shareImage } from "./share-image";
 
 const SITE = "https://predicting.top";
 const SECONDARY = "px-4 py-2 text-sm font-medium bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80";
 const pill = (on: boolean) => `px-2.5 py-1 text-xs rounded ${on ? "bg-primary text-primary-foreground" : "bg-secondary text-secondary-foreground hover:bg-secondary/80"}`;
 const fileStem = (name: string) => name.replace(/[^\w.-]+/g, "_");
 const isAmount = (n: unknown): n is number => typeof n === "number" && Number.isFinite(n);
-const pngBlob = (url: string) => fetch(url).then((r) => r.blob());
 
 export const postOnXUrl = (text: string, profileUrl: string) => `https://x.com/intent/post?text=${encodeURIComponent(`${text}\n\n${profileUrl}`)}`;
 
@@ -21,17 +21,18 @@ function ShareCard({ title, control, imageUrl, alt, fileName, shareText, profile
   const [pasteHint, setPasteHint] = useState(false);
   const canCopy = typeof window !== "undefined" && "ClipboardItem" in window && !!navigator.clipboard?.write;
 
+  // A failed image request saves nothing: there is no file to give, and no message on the original either.
   const download = async () => {
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(await pngBlob(imageUrl));
-    a.download = fileName;
-    a.click();
-    URL.revokeObjectURL(a.href);
+    try {
+      saveBlob(await shareImage(imageUrl), fileName);
+    } catch {
+      /* the image could not be fetched */
+    }
   };
   const share = async () => {
     setPreparing(true);
     try {
-      const file = new File([await pngBlob(imageUrl)], fileName, { type: "image/png" });
+      const file = new File([await shareImage(imageUrl)], fileName, { type: "image/png" });
       if (navigator.canShare?.({ files: [file] })) await navigator.share({ files: [file], text: shareText, url: profileUrl });
       else await download();
     } catch {
@@ -42,7 +43,7 @@ function ShareCard({ title, control, imageUrl, alt, fileName, shareText, profile
   };
   const copy = async () => {
     try {
-      await navigator.clipboard.write([new ClipboardItem({ "image/png": pngBlob(imageUrl) })]);
+      await navigator.clipboard.write([new ClipboardItem({ "image/png": shareImage(imageUrl) })]);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {
@@ -52,7 +53,7 @@ function ShareCard({ title, control, imageUrl, alt, fileName, shareText, profile
   // Posting on X cannot attach an image, so it is put on the clipboard and the user is told to paste it.
   const copyForPost = () => {
     if (!canCopy) return;
-    navigator.clipboard.write([new ClipboardItem({ "image/png": pngBlob(imageUrl) })]).then(
+    navigator.clipboard.write([new ClipboardItem({ "image/png": shareImage(imageUrl) })]).then(
       () => { setPasteHint(true); setTimeout(() => setPasteHint(false), 15000); },
       () => setPasteHint(false),
     );

@@ -1,0 +1,70 @@
+{
+ "at": "2026-11-11T20:30:40.874Z",
+ "base": "https://leaderboard-replica.vercel.app",
+ "pass": true,
+ "results": [
+  {
+   "path": "/",
+   "ok": true,
+   "count": 30,
+   "errors": [],
+   "failed": []
+  },
+  {
+   "path": "/polymarket",
+   "ok": true,
+   "count": 30,
+   "errors": [],
+   "failed": []
+  },
+  {
+   "path": "/kalshi",
+   "ok": true,
+   "count": 100,
+   "errors": [],
+   "failed": []
+  },
+  {
+   "path": "/account/Mitchieboi",
+   "ok": true,
+   "count": 1,
+   "errors": [],
+   "failed": []
+  },
+  {
+   "path": "/account/0x44c1dfe43260c94ed4f1d00de2e1f80fb113ebc1",
+   "ok": true,
+   "count": 1,
+   "errors": [],
+   "failed": []
+  },
+  {
+   "path": "/battle",
+   "ok": true,
+   "count": 1,
+   "errors": [],
+   "failed": []
+  },
+  {
+   "path": "/api-docs",
+   "ok": true,
+   "count": 4,
+   "errors": [],
+   "failed": []
+  },
+  {
+   "path": "/submit",
+   "ok": true,
+   "count": 4,
+   "errors": [],
+   "failed": []
+  },
+  {
+   "path": "/terms",
+   "ok": true,
+   "count": 14,
+   "errors": [],
+   "failed": []
+  }
+ ]
+}

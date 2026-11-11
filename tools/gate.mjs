@@ -20,6 +20,9 @@ if (built) {
   try {
     if (!process.argv.includes('--skip-selftest')) ok = run('parity self-test (planted defects must fail)', 'node', ['evals/parity.mjs', '--selftest']) && ok;
     ok = run('parity (all scenarios, both viewports, production build)', 'node', ['evals/parity.mjs'], { env: { ...process.env, REPLICA: 'http://localhost:4173' } }) && ok;
+    // The parity run recorded every API call both sites made; the production allowlist must admit each one.
+    ok = run('record API calls seen in parity', 'node', ['tools/recorded_calls.mjs']) && ok;
+    ok = run('production allowlist admits every recorded call', 'npx', ['vitest', 'run', 'api/allowlist.fixtures.test.ts'], { cwd: 'app' }) && ok;
   } finally { srv.kill(); }
 }
 const parity = fs.existsSync('evals/out/parity.json') ? JSON.parse(fs.readFileSync('evals/out/parity.json', 'utf8')) : null;

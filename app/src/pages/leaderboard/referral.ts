@@ -1,6 +1,7 @@
 // Outbound links carry the same referral parameters the original adds, and the two referral pings
 // (a visit that arrived with ?ref=, and that visitor staying a minute) go to this site's own API.
 import { useEffect, useRef } from "react";
+import { local, session, type SafeStore } from "@/lib/storage";
 
 const POLYMARKET_VIA = "unbroken0x";
 
@@ -47,7 +48,7 @@ const QUALIFIED_KEY = "referral_qualified";
 const QUALIFY_AFTER_MS = 60_000;
 
 type Send = (path: string, body: unknown) => void;
-type Store = Pick<Storage, "getItem" | "setItem">;
+type Store = SafeStore;
 
 const post: Send = (path, body) => {
   fetch(path, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) }).catch((e: unknown) => {
@@ -56,7 +57,7 @@ const post: Send = (path, body) => {
 };
 
 function qualify(): void {
-  sessionStorage.setItem(QUALIFIED_KEY, "true");
+  session.setItem(QUALIFIED_KEY, "true");
   post("/api/referral/qualify", {});
 }
 
@@ -98,8 +99,8 @@ export function useReferral(): void {
       {
         search: window.location.search,
         pathname: window.location.pathname,
-        local: localStorage,
-        session: sessionStorage,
+        local,
+        session,
         send: post,
         newVisitorId: () => `vis_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`,
       },
@@ -117,7 +118,7 @@ export function useReferral(): void {
           timer = undefined;
           elapsed = Date.now() - startedAt;
         }
-      } else if (!sessionStorage.getItem(QUALIFIED_KEY)) {
+      } else if (!session.getItem(QUALIFIED_KEY)) {
         const left = QUALIFY_AFTER_MS - elapsed;
         if (left > 0) {
           startedAt = Date.now() - elapsed;

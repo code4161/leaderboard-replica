@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Link } from "wouter";
 import { ReplicaNotice } from "@/components/replica-notice";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { safeExternalUrl } from "@/lib/safe-url";
 import { smallAvatar } from "./kalshi-leaderboard/avatar";
 import {
   fetchKalshiLeaderboard,
@@ -158,7 +159,7 @@ export default function KalshiLeaderboardPage() {
                         {row.name}
                       </Link>
                     ) : (
-                      <a href={row.kalshi_url} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                      <a href={safeExternalUrl(row.kalshi_url)} target="_blank" rel="noopener noreferrer" className="hover:underline">
                         {row.name}
                       </a>
                     )}

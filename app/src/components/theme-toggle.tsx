@@ -1,5 +1,6 @@
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
+import { local } from "@/lib/storage";
 
 type Theme = "dark" | "light";
 
@@ -9,7 +10,7 @@ export function useTheme(): [Theme, () => void] {
     const root = document.documentElement;
     root.classList.remove("dark", "light");
     root.classList.add(theme);
-    localStorage.setItem("theme", theme);
+    local.setItem("theme", theme);
   }, [theme]);
   return [theme, () => setTheme((t) => (t === "dark" ? "light" : "dark"))];
 }

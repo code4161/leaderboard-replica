@@ -1,4 +1,5 @@
 // Outbound links: referral tags on platform profiles and X handles.
+import { safeExternalUrl } from "@/lib/safe-url";
 
 const POLYMARKET_VIA = "unbroken0x";
 const KALSHI_REFERRAL = "predictingtop";
@@ -49,7 +50,8 @@ export function withKalshiReferral(url: string, referral = KALSHI_REFERRAL): str
   }
 }
 
-export const twitterUrl = (t: string) => (t.startsWith("http") ? t : `https://x.com/${t.startsWith("@") ? t.slice(1) : t}`);
+// The X link builder is the strict one the leaderboard uses.
+export { twitterUrl } from "@/lib/twitter";
 
 export function twitterHandle(t: string): string {
   if (t.startsWith("http")) {
@@ -57,4 +59,31 @@ export function twitterHandle(t: string): string {
     return m ? m[1] : t;
   }
   return t.startsWith("@") ? t.slice(1) : t;
+}
+
+const POLYMARKET_HOME = "https://polymarket.com";
+const KALSHI_HOME = "https://kalshi.com";
+
+export type ProfileLinks = { polymarket: string; kalshi: string; hyperliquid: string | undefined };
+
+/**
+ * The outbound hrefs of a trader's profile page. A stored profile URL is used only when it is an http(s)
+ * URL: an unsafe Polymarket or Kalshi one falls back to the platform's home page (what an empty one
+ * gets), and an unsafe Hyperliquid one gives no link.
+ */
+export function profileLinks(t: {
+  platform?: string | null;
+  wallet?: string | null;
+  polymarket_profile?: string | null;
+  kalshi_profile?: string | null;
+  hyperliquid_profile?: string | null;
+}): ProfileLinks {
+  const polymarketHome = withVia(POLYMARKET_HOME);
+  const stored = t.polymarket_profile;
+  const polymarket = !stored ? polymarketHome : t.platform === "hyperliquid" ? stored : polymarketProfile(t.wallet, stored) ?? polymarketHome;
+  return {
+    polymarket: safeExternalUrl(polymarket) ?? polymarketHome,
+    kalshi: safeExternalUrl(withKalshiReferral(t.kalshi_profile || KALSHI_HOME)) ?? withKalshiReferral(KALSHI_HOME),
+    hyperliquid: safeExternalUrl(t.hyperliquid_profile),
+  };
 }

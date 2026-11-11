@@ -6,8 +6,8 @@ import { hyperliquidLogo, kalshiLogo, polymarketLogo } from "@/lib/logos";
 import { CalendarStrip } from "./trader-profile/calendar-strip";
 import { CategoryCard } from "./trader-profile/category-card";
 import { useTrader, type Trader } from "./trader-profile/data";
-import { isWalletAddress, joinDate, platformLabel, shortWallet, titlePnl } from "./trader-profile/format";
-import { polymarketProfile, twitterHandle, twitterUrl, withKalshiReferral, withVia } from "./trader-profile/links";
+import { isWalletAddress, joinDate, percent, platformLabel, shortWallet, titlePnl } from "./trader-profile/format";
+import { profileLinks, twitterHandle, twitterUrl } from "./trader-profile/links";
 import { PnlHistory } from "./trader-profile/pnl-history";
 import { PnlOverview } from "./trader-profile/pnl-overview";
 import { ShareChart, ShareCombo, ShareMonth } from "./trader-profile/share-cards";
@@ -86,7 +86,7 @@ function WalletLine({ wallet, also }: { wallet: string; also?: boolean }) {
   return (
     <p>
       {also && <span className="text-muted-foreground/80">Also: </span>}
-      <a href={`/account/${wallet}`} className="hover:text-foreground underline-offset-2 hover:underline" title={wallet}>{shortWallet(wallet)}</a>
+      <a href={`/account/${encodeURIComponent(wallet)}`} className="hover:text-foreground underline-offset-2 hover:underline" title={wallet}>{shortWallet(wallet)}</a>
       <span className="sr-only"> {wallet}</span>
     </p>
   );
@@ -97,11 +97,8 @@ function Profile({ trader, id }: { trader: Trader; id: string }) {
   const kalshiUsername = trader.kalshi_username || undefined;
   const historyUrl = `/api/trader/${encodeURIComponent(id)}/history`;
   const shareId = platform === "kalshi" && kalshiUsername ? kalshiUsername : wallet || kalshiUsername || id;
-  const fallbackPolymarket = withVia("https://polymarket.com");
-  const polymarketUrl = platform === "hyperliquid"
-    ? trader.polymarket_profile || fallbackPolymarket
-    : trader.polymarket_profile ? polymarketProfile(wallet, trader.polymarket_profile) ?? fallbackPolymarket : fallbackPolymarket;
-  const kalshiUrl = withKalshiReferral(trader.kalshi_profile || "https://kalshi.com");
+  const { polymarket: polymarketUrl, kalshi: kalshiUrl, hyperliquid: hyperliquidUrl } = profileLinks(trader);
+  const xUrl = twitterUrl(trader.twitter);
   const otherWallets = (trader.additional_wallets || []).filter((w): w is string => !!w && w.toLowerCase() !== wallet?.toLowerCase());
   const accent = platform === "kalshi" ? "border-t-green-500/50" : platform === "both" ? "border-t-border" : "border-t-sky-400/50";
   const badge = platform === "kalshi" ? "bg-green-500/10 text-green-400" : platform === "both" ? "bg-gradient-to-r from-sky-400/10 to-green-500/10 text-foreground" : "bg-sky-400/10 text-sky-400";
@@ -138,13 +135,13 @@ function Profile({ trader, id }: { trader: Trader; id: string }) {
                   <img src={kalshiLogo} alt="Kalshi" className="w-5 h-5" />
                 </a>
               )}
-              {trader.hyperliquid_profile && (
-                <a href={trader.hyperliquid_profile} target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity" title="View on Outcome (Hyperliquid HIP-4)">
+              {hyperliquidUrl && (
+                <a href={hyperliquidUrl} target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity" title="View on Outcome (Hyperliquid HIP-4)">
                   <img src={hyperliquidLogo} alt="Hyperliquid" className="w-5 h-5 rounded-full" />
                 </a>
               )}
-              {trader.twitter && (
-                <a href={twitterUrl(trader.twitter)} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title={`@${twitterHandle(trader.twitter)}`}>
+              {trader.twitter && xUrl && (
+                <a href={xUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title={`@${twitterHandle(trader.twitter)}`}>
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                     <path d={X_MARK} />
                   </svg>
@@ -193,15 +190,15 @@ function Profile({ trader, id }: { trader: Trader; id: string }) {
               <h3 className="text-sm font-medium text-muted-foreground">Smart Score</h3>
               <div className="flex items-center gap-2">
                 <span className="text-2xl font-bold">{score.score}</span>
-                <span className={`text-sm font-medium px-2 py-0.5 rounded ${TIER_COLOUR[score.tier] ?? "bg-red-500/10 text-red-600 dark:text-red-400"}`}>{score.tier}</span>
+                <span className={`text-sm font-medium px-2 py-0.5 rounded ${TIER_COLOUR[score.tier ?? ""] ?? "bg-red-500/10 text-red-600 dark:text-red-400"}`}>{score.tier}</span>
               </div>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-sm">
-              <Stat label="Win Rate">{(score.winRate * 100).toFixed(0)}%</Stat>
+              <Stat label="Win Rate">{percent(score.winRate, 0)}%</Stat>
               <Stat label="Sharpe">{score.sharpeRatio.toFixed(2)}</Stat>
-              <Stat label="Max Drawdown">{(score.maxDrawdownPercent * 100).toFixed(1)}%</Stat>
+              <Stat label="Max Drawdown">{percent(score.maxDrawdownPercent, 1)}%</Stat>
               <Stat label="Profit Factor">{score.profitFactor.toFixed(2)}</Stat>
-              <Stat label="R²">{(score.rSquared * 100).toFixed(0)}%</Stat>
+              <Stat label="R²">{percent(score.rSquared, 0)}%</Stat>
             </div>
           </div>
         )}

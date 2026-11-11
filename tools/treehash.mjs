@@ -1,6 +1,6 @@
 // Content hash of everything that decides what ships and how it is judged. The gate records it; deploy compares it.
 import fs from 'node:fs'; import path from 'node:path'; import crypto from 'node:crypto';
-const ROOTS = ['app/src', 'app/api', 'app/public', 'app/index.html', 'app/package.json', 'app/package-lock.json', 'app/vercel.json', 'app/tailwind.config.ts', 'app/vite.config.ts', 'app/tsconfig.json', 'evals/parity.mjs', 'evals/lib.mjs', 'evals/thresholds.json', 'evals/scenarios.json', 'evals/scenarios'];
+const ROOTS = ['app/src', 'app/api', 'app/public', 'app/index.html', 'app/package.json', 'app/package-lock.json', 'app/vercel.json', 'app/tailwind.config.ts', 'app/vite.config.ts', 'app/tsconfig.json', 'evals/parity.mjs', 'evals/lib.mjs', 'evals/thresholds.json', 'evals/scenarios.json', 'evals/scenarios', 'evals/recorded-api-calls.json'];
 export function treeHash() {
   const h = crypto.createHash('sha256');
   const add = (p) => { if (!fs.existsSync(p)) return; const st = fs.statSync(p);

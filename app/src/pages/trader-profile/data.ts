@@ -5,14 +5,17 @@ import { z } from "zod";
 const period = z.object({ pnl: z.number().catch(0), buys: z.number().catch(0), sells: z.number().catch(0) });
 const text = z.string().nullish();
 
+// The card is as tolerant as the original's rendering: the score and tier are printed as sent, and the
+// three percentages go through arithmetic that takes a null. Only Sharpe and profit factor are formatted
+// with toFixed directly, which a null cannot take, so those two must be numbers for the card to show.
 const smartScore = z.object({
-  tier: z.string(),
-  score: z.number(),
-  winRate: z.number(),
+  tier: z.string().nullish().catch(null),
+  score: z.number().nullish().catch(null),
+  winRate: z.number().nullish().catch(null),
   sharpeRatio: z.number(),
-  maxDrawdownPercent: z.number(),
+  maxDrawdownPercent: z.number().nullish().catch(null),
   profitFactor: z.number(),
-  rSquared: z.number(),
+  rSquared: z.number().nullish().catch(null),
 });
 
 const trader = z.object({
@@ -32,6 +35,7 @@ const trader = z.object({
   smart_score: smartScore.nullish().catch(null),
 });
 export type Trader = z.infer<typeof trader>;
+export const traderResponse = z.object({ trader: trader.nullish() });
 
 const historyPoint = z.object({
   timestamp: z.number(),
@@ -65,10 +69,13 @@ export function retryNetworkOnly(count: number, error: unknown): boolean {
 }
 const retryDelay = (attempt: number) => Math.min(1000 * 2 ** attempt, 5000) + Math.random() * 250;
 
+/** The id comes from the address bar; it is one path segment, so it is encoded. */
+export const traderUrl = (id: string) => `/api/trader/${encodeURIComponent(id)}`;
+
 export function useTrader(id: string) {
   return useQuery({
     queryKey: ["/api/trader", id],
-    queryFn: async () => (await get(`/api/trader/${id}`, z.object({ trader: trader.nullish() }), () => "Trader not found")).trader ?? null,
+    queryFn: async () => (await get(traderUrl(id), traderResponse, () => "Trader not found")).trader ?? null,
     enabled: !!id,
     staleTime: 60_000,
     retry: retryNetworkOnly,
@@ -105,4 +112,4 @@ export function useKalshiCategories(username: string) {
   return { categories: all.data?.categories ?? [], isLoading: all.isLoading, changes: (change.data?.change?.categories ?? []).slice(0, 3) };
 }
 
-export const historyUrlFor = (t: { kalshiUsername?: string | null; historyUrl?: string }) => t.historyUrl ?? (t.kalshiUsername ? `/api/kalshi/${t.kalshiUsername}/history` : null);
+export const historyUrlFor = (t: { kalshiUsername?: string | null; historyUrl?: string }) => t.historyUrl ?? (t.kalshiUsername ? `/api/kalshi/${encodeURIComponent(t.kalshiUsername)}/history` : null);

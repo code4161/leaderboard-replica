@@ -9,11 +9,11 @@ if (!g.pass) { console.error("deploy refused: the last gate failed"); process.ex
 if (g.tree !== process.argv[1]) { console.error(`deploy refused: gate passed for tree ${g.tree}, the tree is now ${process.argv[1]}. Run npm run gate.`); process.exit(1); }
 console.log(`gate ${g.tree} passed at ${g.at} (${g.scenarios} scenarios)`);' "$tree"
 cd app
-url=$(npx vercel deploy --prod --yes 2>/dev/null | tail -1)
+url=$(npx vercel deploy --prod --yes 2>/dev/null | grep -oE "https://[A-Za-z0-9.-]+\.vercel\.app" | head -1)
+[ -n "$url" ] || { echo "deploy failed: no deployment URL returned"; exit 1; }
 echo "deployed: $url"
 cd ..
 live="${LIVE_URL:-$url}"
-node evals/api_contract.mjs --base "$live"
-REPLICA="$live" node evals/parity.mjs --only home,kalshi,terms,acct_poly --vp d
+tools/live_checks.sh "$live"
 node -e 'require("fs").writeFileSync("evals/out/deploy.json", JSON.stringify({at:new Date().toISOString(), tree:process.argv[1], url:process.argv[2], live:process.argv[3]},null,1))' "$tree" "$url" "$live"
 echo "LIVE CHECKS: PASS $live"

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { avatarInitial, smallAvatar } from "@/lib/avatar";
+import { openExternal, safeExternalUrl } from "@/lib/safe-url";
 import { daysAgo, displayName, formatChange, formatPnl, formatWinRate, roiText } from "@/lib/format";
 import { affiliatedLogo, hyperliquidLogo, kalshiLogo, polymarketLogo, xLogo } from "@/lib/logos";
 import { accountHref, scoreColor, sharpeColor, sharpeFor, sharpeWindow, sortIndicator, twitterUrl, winRateColor } from "./filter-sort";
@@ -50,16 +51,12 @@ function TraderName({ trader, className }: { trader: Trader; className: string }
   if (href) return <a href={href} className={className} data-testid={testid}>{label}</a>;
   if ((trader.platform || "polymarket") === "myriad" && trader.wallet) {
     return (
-      <a href={`https://myriad.markets/profile/${trader.wallet}`} target="_blank" rel="noopener noreferrer" className={className} data-testid={testid}>
+      <a href={`https://myriad.markets/profile/${encodeURIComponent(trader.wallet)}`} target="_blank" rel="noopener noreferrer" className={className} data-testid={testid}>
         {label}
       </a>
     );
   }
   return <span className={className} data-testid={testid}>{label}</span>;
-}
-
-function open(url: string, features?: string) {
-  window.open(url, "_blank", features);
 }
 
 function Marks({ trader: t, size }: { trader: Trader; size: string }) {
@@ -80,7 +77,7 @@ function Marks({ trader: t, size }: { trader: Trader; size: string }) {
         <button
           onClick={(e) => {
             e.stopPropagation();
-            open(x, "noopener,noreferrer");
+            openExternal(x);
           }}
           className={button}
           data-testid={`button-twitter-${t.rank}`}
@@ -92,7 +89,7 @@ function Marks({ trader: t, size }: { trader: Trader; size: string }) {
         <button
           onClick={(e) => {
             e.stopPropagation();
-            open(t.polymarket_profile || polymarketProfileUrl(t.wallet, null) || withVia("https://polymarket.com"));
+            openExternal(safeExternalUrl(t.polymarket_profile) ?? polymarketProfileUrl(t.wallet, null) ?? withVia("https://polymarket.com"));
           }}
           className={button}
           data-testid={`button-polymarket-${t.rank}`}
@@ -101,7 +98,7 @@ function Marks({ trader: t, size }: { trader: Trader; size: string }) {
         </button>
       )}
       {onKalshi && (
-        <a href={`/account/${t.kalshi_username}`} onClick={(e) => e.stopPropagation()} className={button} data-testid={`button-kalshi-${t.rank}`}>
+        <a href={`/account/${encodeURIComponent(String(t.kalshi_username))}`} onClick={(e) => e.stopPropagation()} className={button} data-testid={`button-kalshi-${t.rank}`}>
           <img src={kalshiLogo} alt="Kalshi" className={round} />
         </a>
       )}
@@ -109,7 +106,7 @@ function Marks({ trader: t, size }: { trader: Trader; size: string }) {
         <button
           onClick={(e) => {
             e.stopPropagation();
-            if (t.hyperliquid_profile) open(t.hyperliquid_profile);
+            openExternal(t.hyperliquid_profile);
           }}
           className={button}
           data-testid={`button-hyperliquid-${t.rank}`}
@@ -122,7 +119,7 @@ function Marks({ trader: t, size }: { trader: Trader; size: string }) {
         <button
           onClick={(e) => {
             e.stopPropagation();
-            open(t.myriad_profile || `https://myriad.markets/profile/${t.wallet}`);
+            openExternal(t.myriad_profile || `https://myriad.markets/profile/${encodeURIComponent(String(t.wallet))}`);
           }}
           className={button}
           data-testid={`button-myriad-${t.rank}`}
@@ -247,7 +244,7 @@ export function LeaderboardTable({ traders, period, columns, sortColumn, sortDir
               </td>
               <td className="p-1 sm:p-2 text-center" title="Overall score 0-100">
                 {score ? (
-                  <span className={`font-medium ${scoreColor(score.score)} ${s.score}`}>{score.score}</span>
+                  <span className={`font-medium ${scoreColor(score.score ?? 0)} ${s.score}`}>{score.score}</span>
                 ) : (
                   <span className={`text-muted-foreground/40 ${s.score}`}>{DASH}</span>
                 )}
@@ -264,7 +261,7 @@ export function LeaderboardTable({ traders, period, columns, sortColumn, sortDir
               {columns.has("winrate") && (
                 <td className="p-1 text-center hidden sm:table-cell" title="% of days with profit">
                   {score ? (
-                    <span className={`${s.score} ${winRateColor(score.winRate)}`}>{formatWinRate(score.winRate)}</span>
+                    <span className={`${s.score} ${winRateColor(score.winRate ?? 0)}`}>{formatWinRate(Number(score.winRate))}</span>
                   ) : (
                     <span className={`${s.score} text-muted-foreground/40`}>{DASH}</span>
                   )}

@@ -1,0 +1,133 @@
+{
+ "at": "2026-11-11T20:29:40.355Z",
+ "base": "https://leaderboard-replica.vercel.app",
+ "pass": true,
+ "results": [
+  {
+   "route": "GET leaderboard",
+   "ok": true,
+   "original": 200,
+   "replica": 200
+  },
+  {
+   "route": "GET leaderboard?period=1d",
+   "ok": true,
+   "original": 200,
+   "replica": 200
+  },
+  {
+   "route": "GET leaderboard?period=all",
+   "ok": true,
+   "original": 200,
+   "replica": 200
+  },
+  {
+   "route": "GET leaderboard?period=bogus",
+   "ok": true,
+   "original": 400,
+   "replica": 400
+  },
+  {
+   "route": "GET embed/leaderboard",
+   "ok": true,
+   "original": 200,
+   "replica": 200
+  },
+  {
+   "route": "GET kalshi-leaderboard?period=30d&limit=5",
+   "ok": true,
+   "original": 200,
+   "replica": 200
+  },
+  {
+   "route": "GET daily-profit",
+   "ok": true,
+   "original": 200,
+   "replica": 200
+  },
+  {
+   "route": "GET m/insights?period=24h&limit=3",
+   "ok": true,
+   "original": 200,
+   "replica": 200
+  },
+  {
+   "route": "GET trader/0x44c1dfe43260c94ed4f1d00de2e1f80fb113ebc1",
+   "ok": true,
+   "original": 200,
+   "replica": 200
+  },
+  {
+   "route": "GET trader/Mitchieboi",
+   "ok": true,
+   "original": 200,
+   "replica": 200
+  },
+  {
+   "route": "GET trader/this-user-does-not-exist-zz9",
+   "ok": true,
+   "original": 404,
+   "replica": 404
+  },
+  {
+   "route": "GET trader/0x44c1dfe43260c94ed4f1d00de2e1f80fb113ebc1/positions?limit=3",
+   "ok": true,
+   "original": 200,
+   "replica": 200
+  },
+  {
+   "route": "GET trader/0x44c1dfe43260c94ed4f1d00de2e1f80fb113ebc1/trades?limit=3",
+   "ok": true,
+   "original": 200,
+   "replica": 200
+  },
+  {
+   "route": "GET kalshi/aenews/categories",
+   "ok": true,
+   "original": 200,
+   "replica": 200
+  },
+  {
+   "route": "GET battle/comparison",
+   "ok": true,
+   "original": 400,
+   "replica": 400
+  },
+  {
+   "route": "GET unknown route is 404",
+   "ok": true
+  },
+  {
+   "route": "GET path traversal is 404",
+   "ok": true
+  },
+  {
+   "route": "POST submissions answered locally",
+   "ok": true
+  },
+  {
+   "route": "unknown query parameter is 400",
+   "ok": true
+  },
+  {
+   "route": "dot segment is 404",
+   "ok": true
+  },
+  {
+   "route": "nosniff on API responses",
+   "ok": true
+  },
+  {
+   "route": "DELETE is 405",
+   "ok": true
+  },
+  {
+   "route": "read route is served from the edge cache on a repeat request",
+   "ok": true
+  },
+  {
+   "route": "noindex header on pages",
+   "ok": true
+  }
+ ]
+}
