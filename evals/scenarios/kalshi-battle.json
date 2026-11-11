@@ -1,0 +1,22 @@
+[
+ {"name":"kb_kalshi_period_1m","path":"/kalshi","steps":[{"do":"click","text":"1M"},{"do":"hover","css":"thead th"}]},
+ {"name":"kb_kalshi_period_7d","path":"/kalshi","steps":[{"do":"click","text":"7D"},{"do":"hover","css":"thead th"}]},
+ {"name":"kb_kalshi_period_1d","path":"/kalshi","steps":[{"do":"click","text":"1D"},{"do":"hover","css":"thead th"}]},
+ {"name":"kb_kalshi_nonsports","path":"/kalshi","steps":[{"do":"click","text":"Non-sports"},{"do":"hover","css":"thead th"}]},
+ {"name":"kb_kalshi_nonsports_7d","path":"/kalshi","steps":[{"do":"click","text":"Non-sports"},{"do":"hover","css":"thead th"},{"do":"click","text":"7D"},{"do":"hover","css":"thead th"}]},
+ {"name":"kb_kalshi_nonsports_off","path":"/kalshi","steps":[{"do":"click","text":"Non-sports"},{"do":"hover","css":"thead th"},{"do":"click","text":"Non-sports"},{"do":"hover","css":"thead th"}]},
+ {"name":"kb_kalshi_search","path":"/kalshi","steps":[{"do":"fill","css":"input[placeholder='Search Kalshi traders...']","value":"coby"}]},
+ {"name":"kb_kalshi_search_username","path":"/kalshi","steps":[{"do":"fill","css":"input[placeholder='Search Kalshi traders...']","value":"  LOSTZEMBLAN "}]},
+ {"name":"kb_kalshi_search_many","path":"/kalshi","steps":[{"do":"fill","css":"input[placeholder='Search Kalshi traders...']","value":"a"},{"do":"scroll"}]},
+ {"name":"kb_kalshi_search_empty","path":"/kalshi","steps":[{"do":"fill","css":"input[placeholder='Search Kalshi traders...']","value":"zzqqxxnomatch"}]},
+ {"name":"kb_kalshi_search_then_period","path":"/kalshi","steps":[{"do":"fill","css":"input[placeholder='Search Kalshi traders...']","value":"an"},{"do":"click","text":"1M"},{"do":"hover","css":"thead th"}]},
+ {"name":"kb_kalshi_show_more","path":"/kalshi","steps":[{"do":"click","text":"Show more (900 left)"},{"do":"scroll"}]},
+ {"name":"kb_kalshi_show_more_reset","path":"/kalshi","steps":[{"do":"click","text":"Show more (900 left)"},{"do":"click","text":"7D"},{"do":"hover","css":"thead th"},{"do":"scroll"}]},
+ {"name":"kb_kalshi_bottom","path":"/kalshi","steps":[{"do":"scroll"}]},
+ {"name":"kb_kalshi_theme_light","path":"/kalshi","steps":[{"do":"click","testid":"button-theme-toggle"}]},
+ {"name":"kb_kalshi_row_hover","path":"/kalshi","steps":[{"do":"hover","text":"4thewin"}]},
+ {"name":"kb_kalshi_profile_link","path":"/kalshi","steps":[{"do":"click","text":"dogname"},{"do":"wait","ms":2500}]},
+ {"name":"kb_kalshi_all_platforms","path":"/kalshi","steps":[{"do":"click","text":"All platforms"},{"do":"wait","ms":2500}]},
+ {"name":"kb_battle_tooltip","path":"/battle","steps":[{"do":"hover","css":".recharts-surface"}]},
+ {"name":"kb_battle_bottom","path":"/battle","steps":[{"do":"scroll"}]}
+]

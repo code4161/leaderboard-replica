@@ -1,0 +1,146 @@
+{
+ "at": "2026-11-11T19:48:52.458Z",
+ "model": "sonnet",
+ "controlCaught": true,
+ "control": {
+  "differences": [
+   {
+    "region": "Table, first row",
+    "what": "Row 1 (Mitchieboi, 406d, 56.1, +$158,236.23, Elections +$33K) is missing in B. The table starts at rank 2 (aenews).",
+    "severity": "major"
+   },
+   {
+    "region": "Table, all rows",
+    "what": "Every row after the missing one is shifted up by one row height (about 61px). Ranks 2 to 9 sit where ranks 1 to 8 are in A.",
+    "severity": "major"
+   },
+   {
+    "region": "Table, row 10",
+    "what": "Rank 10 (elucidate, 821d, 38.5 in orange, +$19,002.25, with a small avatar and +$3K sub-line) is fully visible in B. In A it is only partly visible at the bottom edge.",
+    "severity": "major"
+   },
+   {
+    "region": "Table, bottom edge",
+    "what": "The partly visible row below the last full row differs: A shows rank 10 cut off, B shows rank 11 cut off with +$17,448.99.",
+    "severity": "minor"
+   },
+   {
+    "region": "Header, controls and column headings",
+    "what": "The title, subtitle, Today total, search box, trader count, filters, P&L tabs, legend text and column headers look the same in both images.",
+    "severity": "minor"
+   }
+  ],
+  "identical": false
+ },
+ "pass": true,
+ "results": [
+  {
+   "tag": "acct_kalshi_d",
+   "order": "A=original",
+   "ok": true,
+   "verdict": {
+    "differences": [],
+    "identical": true
+   }
+  },
+  {
+   "tag": "acct_poly_d",
+   "order": "A=original",
+   "ok": true,
+   "verdict": {
+    "differences": [],
+    "identical": true
+   }
+  },
+  {
+   "tag": "acct_poly_m",
+   "order": "A=replica",
+   "ok": true,
+   "verdict": {
+    "differences": [],
+    "identical": true
+   }
+  },
+  {
+   "tag": "apidocs_d",
+   "order": "A=replica",
+   "ok": true,
+   "verdict": {
+    "differences": [],
+    "identical": true
+   }
+  },
+  {
+   "tag": "battle_d",
+   "order": "A=original",
+   "ok": true,
+   "verdict": {
+    "differences": [],
+    "identical": true
+   }
+  },
+  {
+   "tag": "home_d",
+   "order": "A=replica",
+   "ok": true,
+   "verdict": {
+    "differences": [],
+    "identical": true
+   }
+  },
+  {
+   "tag": "home_m",
+   "order": "A=replica",
+   "ok": true,
+   "verdict": {
+    "differences": [],
+    "identical": true
+   }
+  },
+  {
+   "tag": "kalshi_d",
+   "order": "A=original",
+   "ok": true,
+   "verdict": {
+    "differences": [],
+    "identical": true
+   }
+  },
+  {
+   "tag": "lb_period_all_d",
+   "order": "A=original",
+   "ok": true,
+   "verdict": {
+    "differences": [],
+    "identical": true
+   }
+  },
+  {
+   "tag": "polymarket_d",
+   "order": "A=original",
+   "ok": true,
+   "verdict": {
+    "differences": [],
+    "identical": true
+   }
+  },
+  {
+   "tag": "submit_d",
+   "order": "A=replica",
+   "ok": true,
+   "verdict": {
+    "differences": [],
+    "identical": true
+   }
+  },
+  {
+   "tag": "terms_d",
+   "order": "A=replica",
+   "ok": true,
+   "verdict": {
+    "differences": [],
+    "identical": true
+   }
+  }
+ ]
+}

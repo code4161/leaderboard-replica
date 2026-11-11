@@ -1,0 +1,47 @@
+/* Site-wide element rules the original applies on every page and src/index.css does not carry yet.
+   They are global, not page styles: held here only until they are merged into src/index.css.
+   What they decide on these pages: a button never shows a border (its border style is none, so a
+   width utility has nothing to draw) and takes the body font; buttons and links never show a hover
+   background; tables are fixed-layout. */
+button:hover,
+a:hover {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+table {
+  border-collapse: collapse;
+  font-family: system-ui, Arial, Helvetica, sans-serif;
+  table-layout: fixed;
+}
+th,
+td {
+  border: none;
+  padding: 8px;
+}
+thead tr {
+  border-bottom: 1px solid var(--foreground);
+}
+tbody tr {
+  border-bottom: 1px solid var(--border);
+}
+button {
+  font-family: system-ui, Arial, Helvetica, sans-serif;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--foreground);
+}
+button.active {
+  text-decoration: underline;
+}
+button,
+a {
+  transition: opacity 0.1s ease-out;
+}
+button:active,
+a:active {
+  opacity: 0.7;
+}
+.animate-pulse {
+  will-change: opacity;
+}

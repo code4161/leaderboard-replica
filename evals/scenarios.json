@@ -1,0 +1,11 @@
+[
+ {"name":"home","path":"/"},
+ {"name":"polymarket","path":"/polymarket"},
+ {"name":"kalshi","path":"/kalshi"},
+ {"name":"battle","path":"/battle"},
+ {"name":"apidocs","path":"/api-docs"},
+ {"name":"submit","path":"/submit"},
+ {"name":"terms","path":"/terms"},
+ {"name":"acct_poly","path":"/account/0x44c1dfe43260c94ed4f1d00de2e1f80fb113ebc1"},
+ {"name":"acct_kalshi","path":"/account/Mitchieboi"}
+]

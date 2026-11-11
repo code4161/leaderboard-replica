@@ -1,0 +1,51 @@
+{
+ "at": "2026-11-11T19:26:38.521Z",
+ "floor": {
+  "tag": "selftest_floor",
+  "domSim": 1,
+  "styleRatio": 0,
+  "pixel": 0,
+  "replicaErrors": [],
+  "failure": null,
+  "originalFailure": null,
+  "checks": {
+   "dom": true,
+   "style": true,
+   "pixel": true,
+   "errors": true,
+   "ran": true,
+   "url": true
+  },
+  "pass": true
+ },
+ "caught": {
+  "recolour": {
+   "dom": true,
+   "style": true,
+   "pixel": true,
+   "failedGate": true,
+   "domSim": 0.9986,
+   "styleRatio": 0.0034,
+   "pixelRatio": 0.0007
+  },
+  "nudge": {
+   "dom": true,
+   "style": true,
+   "pixel": true,
+   "failedGate": true,
+   "domSim": 0.9986,
+   "styleRatio": 0.9262,
+   "pixelRatio": 0.0261
+  },
+  "removed": {
+   "dom": true,
+   "style": true,
+   "pixel": true,
+   "failedGate": true,
+   "domSim": 0.9699,
+   "styleRatio": 0.8993,
+   "pixelRatio": 0.0244
+  }
+ },
+ "ok": true
+}

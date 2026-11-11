@@ -1,0 +1,4370 @@
+{
+ "at": "2026-11-11T19:47:11.965Z",
+ "original": "https://predicting.top",
+ "replica": "http://localhost:4173",
+ "thresholds": {
+  "dom_min_similarity": 1,
+  "style_max_mismatch_ratio": 0,
+  "pixel_max_diff_ratio": 0.0005,
+  "replica_console_errors_max": 0
+ },
+ "pass": true,
+ "results": [
+  {
+   "tag": "home_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "home_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "polymarket_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "polymarket_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kalshi_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kalshi_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "battle_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "battle_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "apidocs_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "apidocs_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "submit_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "submit_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "terms_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "terms_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "acct_poly_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "acct_poly_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "acct_kalshi_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "acct_kalshi_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_period_1m_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_period_1m_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_period_7d_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_period_7d_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_period_1d_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_period_1d_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_nonsports_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_nonsports_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_nonsports_7d_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_nonsports_7d_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_nonsports_off_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_nonsports_off_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_search_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_search_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_search_username_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_search_username_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_search_many_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_search_many_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_search_empty_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_search_empty_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_search_then_period_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_search_then_period_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_show_more_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_show_more_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_show_more_reset_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_show_more_reset_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_bottom_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_bottom_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_theme_light_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_theme_light_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_row_hover_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_row_hover_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_profile_link_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_profile_link_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_all_platforms_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_kalshi_all_platforms_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_battle_tooltip_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_battle_tooltip_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_battle_bottom_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "kb_battle_bottom_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_search_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_search_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_search_wallet_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_search_wallet_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_search_empty_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_search_empty_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_search_stripped_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_search_stripped_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_search_clear_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_search_clear_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_period_all_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_period_all_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_period_ytd_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_period_ytd_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_period_1m_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_period_1m_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_period_back_1d_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_period_back_1d_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_big_movers_off_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_big_movers_off_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_platform_polymarket_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_platform_polymarket_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_platform_kalshi_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_platform_kalshi_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_platform_hyperliquid_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_platform_hyperliquid_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_affiliated_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_affiliated_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_linked_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_linked_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_sports_shown_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_sports_shown_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_esports_shown_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_esports_shown_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_all_filters_off_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_all_filters_off_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_col_sharpe_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_col_winrate_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_col_roi_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_col_all_three_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_col_toggle_off_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_col_sharpe_period_all_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_col_sharpe_period_1m_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_sort_pnl_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_sort_pnl_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_sort_pnl_desc_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_sort_pnl_desc_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_sort_score_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_sort_score_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_sort_score_desc_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_sort_score_desc_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_sort_joined_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_sort_joined_desc_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_sort_sharpe_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_sort_winrate_desc_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_sort_roi_desc_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_show_more_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_show_more_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_show_more_twice_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_show_more_twice_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_show_more_reset_by_filter_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_show_more_reset_by_filter_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_scroll_bottom_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_scroll_bottom_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_theme_toggle_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_theme_toggle_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_hover_row_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_hover_row_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_hover_period_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_hover_period_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_poly_scroll_bottom_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_poly_scroll_bottom_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_poly_platform_all_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_poly_platform_all_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_poly_period_all_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_poly_period_all_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_poly_search_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_poly_search_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_poly_show_more_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_poly_show_more_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_poly_sort_pnl_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_poly_sort_pnl_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_poly_light_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "lb_poly_light_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_copy_example_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_copy_example_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_copy_endpoint_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_copy_endpoint_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_copy_reverts_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_copy_reverts_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_hover_copy_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_hover_copy_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_hover_try_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_hover_try_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_hover_back_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_hover_back_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_scroll_mid_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_scroll_mid_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_scroll_mid2_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_scroll_mid2_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_scroll_end_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_scroll_end_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_light_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_apidocs_light_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_terms_scroll_mid_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_terms_scroll_mid_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_terms_scroll_end_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_terms_scroll_end_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_terms_light_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_terms_light_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_empty_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_empty_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_bad_handle_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_bad_handle_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_no_account_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_no_account_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_bad_account_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_bad_account_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_no_pnl_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_no_pnl_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_bad_pnl_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_bad_pnl_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_error_clears_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_error_clears_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_filled_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_filled_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_platform_kalshi_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_platform_kalshi_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_focus_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_focus_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_hover_button_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_hover_button_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_success_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_success_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_light_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "sp_submit_light_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_calendar_open_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_calendar_open_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_calendar_monthly_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_calendar_monthly_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_calendar_prev_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_calendar_prev_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_calendar_prev_open_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_calendar_prev_open_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_calendar_prev_next_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_calendar_prev_next_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_calendar_close_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_calendar_close_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_kalshi_calendar_open_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_kalshi_calendar_open_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_kalshi_calendar_earliest_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_kalshi_calendar_earliest_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_chart_hover_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_chart_hover_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_kalshi_chart_hover_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_kalshi_chart_hover_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_chart_info_hover_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_chart_info_hover_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_share_black_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_share_black_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_share_range_30d_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_share_range_30d_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_share_range_7d_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_share_range_7d_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_share_month_select_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_share_month_select_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_share_combo_month_select_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_share_combo_month_select_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_theme_light_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_theme_light_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_theme_light_calendar_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_theme_light_calendar_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_poly_only_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_poly_only_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_poly_only_calendar_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_poly_only_calendar_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_multi_wallet_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_multi_wallet_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_hyperliquid_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_hyperliquid_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_hyperliquid_unnamed_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_hyperliquid_unnamed_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_not_found_d",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  },
+  {
+   "tag": "tp_not_found_m",
+   "domSim": 1,
+   "styleRatio": 0,
+   "pixel": 0,
+   "replicaErrors": [],
+   "failure": null,
+   "originalFailure": null,
+   "checks": {
+    "dom": true,
+    "style": true,
+    "pixel": true,
+    "errors": true,
+    "ran": true,
+    "url": true
+   },
+   "pass": true
+  }
+ ]
+}

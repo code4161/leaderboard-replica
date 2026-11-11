@@ -1,0 +1,10 @@
+{
+ "title": "Prediction Market Leaderboard — Top Polymarket & Kalshi Traders | predicting.top",
+ "fonts": [],
+ "bodyFont": "system-ui, Arial, Helvetica, sans-serif",
+ "links": [
+  "<link rel=\"preload\" href=\"/api/leaderboard?period=1d\" as=\"fetch\" crossorigin=\"anonymous\">",
+  "<link rel=\"stylesheet\" crossorigin=\"\" href=\"/assets/index-DfsHBYrd.css\">"
+ ],
+ "htmlClass": "dark"
+}

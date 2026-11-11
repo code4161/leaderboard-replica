@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.vercel/
+.env*
+reference/original-bundle/
+evals/out/
+test-results/
+playwright-report/
+.DS_Store
+.claude/settings.local.json

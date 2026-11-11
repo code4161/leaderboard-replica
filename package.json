@@ -1,0 +1,27 @@
+{
+  "name": "elcara-replica-workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "capture": "node tools/capture.mjs",
+    "parity": "node evals/parity.mjs",
+    "gate": "node tools/gate.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "cheerio": "^1.2.0",
+    "diff": "^9.0.0",
+    "js-beautify": "^2.0.3",
+    "pixelmatch": "^8.0.0",
+    "playwright": "^1.65.0",
+    "pngjs": "^7.0.0"
+  },
+  "private": true
+}

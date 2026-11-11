@@ -1,0 +1,41 @@
+@import "./tokens.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { border-color: var(--border); }
+  body {
+    background-color: var(--background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: system-ui, Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    line-height: 1.4;
+  }
+}
+* { box-shadow: none !important; background-image: none !important; text-shadow: none !important; }
+.active { text-decoration: underline; }
+.avatar { width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--foreground); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; background: var(--background); }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+
+/* Element defaults of the original stylesheet. They sit in the utilities layer, as they do there:
+   after the plain utilities (so `button { border: none }` turns off the line a `.border` class would draw)
+   and before the hover and breakpoint variants. */
+@layer utilities {
+  button:hover, a:hover { background: transparent !important; box-shadow: none !important; }
+  table { border-collapse: collapse; font-family: system-ui, Arial, Helvetica, sans-serif; }
+  th, td { border: none; padding: 8px; }
+  thead tr { border-bottom: 1px solid var(--foreground); }
+  tbody tr { border-bottom: 1px solid var(--border); }
+  button { font-family: system-ui, Arial, Helvetica, sans-serif; background: transparent; border: none; cursor: pointer; color: var(--foreground); }
+  button.active { text-decoration: underline; }
+  #trending, #recent-trades { content-visibility: auto; contain-intrinsic-size: auto 500px; }
+  button, a { transition: opacity .1s ease-out; }
+  button:active, a:active { opacity: .7; }
+  table { table-layout: fixed; }
+  .animate-pulse { will-change: opacity; }
+  [data-testid=leaderboard-table] { contain: layout style; }
+}
