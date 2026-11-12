@@ -201,3 +201,11 @@ Every defect below happened during this build and was caught by the check named 
 **How it was caught.** The live API contract run printed FAIL 23/24 on the cache check, and the deploy script printed deployed: }
 
 **Fix.** The cache check makes two requests and requires the second to be served from the edge cache. The script extracts the deployment URL by pattern and stops if there is none.
+
+### 25. evals/lib.mjs
+
+**What was wrong.** The harness compared a page as soon as the network went quiet, before every image had finished loading. On the CI runner the share-card images were still decoding on the replica, so its loading placeholder was still in the page: tp_share_range_30d_d, tp_share_range_7d_d and tp_share_month_select_d failed with one extra placeholder element (DOM 0.9971) and pixels up to 0.157. The same scenarios passed on the Mac.
+
+**How it was caught.** The CI gate on GitHub Actions: 239 of 242 runs passed, and the uploaded diff showed the one extra line, the replica's animate-pulse placeholder
+
+**Fix.** The harness waits until every image on the page has finished loading or failed before it compares.

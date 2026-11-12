@@ -6,7 +6,7 @@ const own = read('docs/bugs.jsonl'); const by = Object.fromEntries(own.map((b) =
 const pages = [...read('docs/bugs/kalshi-battle.jsonl'), ...read('docs/bugs/leaderboard.jsonl'), ...read('docs/bugs/trader-profile.jsonl'), ...read('docs/bugs/static-pages.jsonl'), ...read('docs/bugs/review.jsonl')];
 const page = Object.fromEntries(pages.map((b) => [b.id, b]));
 const DUPLICATES = { L01: 'K01', K03: 'B04', T01: 'B04', S01: 'B05', S02: 'B04', S03: 'B03', S04: 'B06' };
-const ORDER = [['Building the harness and the scaffold', ['B01', 'B02']], ['Building the pages', ['K01', 'B04', 'B03', 'B05', 'B06', 'K02', 'T02', 'T03', 'L02', 'L03', 'B07', 'B08']], ['Review', ['B09', 'B10', 'R01', 'R02', 'R03', 'R04', 'R05', 'R06', 'R07']], ['Deploy', ['B11']]];
+const ORDER = [['Building the harness and the scaffold', ['B01', 'B02']], ['Building the pages', ['K01', 'B04', 'B03', 'B05', 'B06', 'K02', 'T02', 'T03', 'L02', 'L03', 'B07', 'B08']], ['Review', ['B09', 'B10', 'R01', 'R02', 'R03', 'R04', 'R05', 'R06', 'R07']], ['Deploy', ['B11', 'B12']]];
 const all = { ...page, ...by }; const listed = new Set(ORDER.flatMap(([, ids]) => ids));
 const missing = Object.keys(all).filter((id) => !listed.has(id) && !DUPLICATES[id]);
 if (missing.length) { console.error('unplaced defects: ' + missing.join(', ')); process.exit(1); }

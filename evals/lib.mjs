@@ -63,6 +63,9 @@ export async function openSite(browser, origin, viewport, { theme = 'dark' } = {
 export async function settle(page) {
   await page.waitForLoadState('networkidle', { timeout: 30000 }).catch(() => {});
   await page.evaluate(() => document.fonts?.ready).catch(() => {});
+  // A page that swaps a placeholder for an image on load is only comparable once every image has finished, loaded or failed.
+  await page.waitForFunction(() => [...document.images].every((i) => i.complete), null, { timeout: 20000 }).catch(() => {});
+  await page.waitForTimeout(200);
   await page.addStyleTag({ content: '*,*::before,*::after{animation:none!important;transition:none!important;caret-color:transparent!important}[data-replica-notice]{display:none!important}' }).catch(() => {});
   await page.waitForTimeout(600);
 }
